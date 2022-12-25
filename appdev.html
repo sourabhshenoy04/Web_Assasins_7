@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>webassasins.in/AppDevServices</title>
+
+<style>
+
+  .ccc{
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.76);
+    height: 200px;
+    width: 200px;
+    border: 0;
+    border-radius: 50% ;
+    background: none;
+  }
+
+  .cccc{
+    height: 200px;
+    width: 200px;
+    border: 0;
+    border-radius: 50% ;
+  }
+
+  .boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .to1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #33383b;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .to2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #33383b;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .box_1{
+    border: 0;
+    border-radius: 1%;
+    width: 400px;
+    height: 600px;
+    background-color: #4A4090;
+    color: whitesmoke;
+  }
+
+  .box_2{
+    border: 0;
+    border-radius: 1%;
+    width: 400px;
+    height: 600px;
+    background-color: #4A4090;
+    color: whitesmoke;
+  }
+
+  .box_3{
+    border: 0;
+    border-radius: 2%;
+    width: 400px;
+    height: 600px;
+    background-color: #4A4090;
+    color: whitesmoke;
+  }
+  
+.text_4{
+font-size: 35px;
+}
+
+  #pt1{
+      height: 80px;
+      width: 130px;
+  }
+  #pt2{
+      height: 80px;
+      width: 250px;
+  }
+  #pt3{
+      height: 80px;
+      width: 250px;
+  }
+  #pt4{
+      height: 80px;
+      width: 250px;
+  }
+  #pt5{
+      height: 80px;
+      width: 250px;
+  }
+
+  .hd{
+    color: #33383b;
+    font-size: 45px;
+  }
+
+  .pd{
+      padding-top: 19px;
+  }
+
+
+.submit{
+    border-radius: 25%;
+    border-width: 0px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #4A4090;
+    transition: transform .7s ease-out;
+    color: whitesmoke;
+}
+.submit:hover{
+  transform:scale(1.2);
+}
+
+.text_2{
+  font-size: 25px;
+}
+
+#text_2 {
+  font-size: 30px;
+   
+  position: relative;
+  color: #33383b;
+
+}
+
+#text_2:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 400px;
+  right: -40px;
+  background-color: #4A4090;
+  transform-origin: center;
+  transition: transform 0.5s ease-out;
+}
+
+#text_2:hover:after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+
+            #text{
+              font-size: 50px;
+            }
+
+            #text_3{
+              font-size: 20px;
+              color: #33383b;
+            }
+
+            .appdev{
+              display: flex;
+              flex-direction: row;
+            }
+
+
+            .partners{
+                width: 50px;
+                height: 80px;
+                display: flex;
+                
+            }
+
+            .partners_2{
+              display: flex;
+            }
+
+
+            .head{
+              text-decoration: none;
+              color: black;
+              font-family: Arial, Helvetica, sans-serif
+            }
+            .head:hover{
+              text-decoration: none;
+              color: whitesmoke;
+            }
+ 
+
+            h2{
+              transition: transform .7s ease-in;
+            }
+            h2:hover{
+              transform: scale(1.5);
+            }
+
+            /* .background_full{
+                background-color: whitesmoke;
+                background-repeat: no-repeat;
+                background-size: 50000px;
+                height: 1100px;
+            } */
+
+            .form{
+              background-image: linear-gradient(45deg,#6a3093,white,#6a3093);
+                width: 1300px;
+                border: 0px solid #4A4090;
+                padding: 50px;
+                margin-left: 10px;
+                margin-right: 500px;
+                border-radius: 1%;
+                box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.76);
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 25px;
+                color: #33383b;
+                display: flex;
+              }
+              .field{
+                float: left;
+                width: 75%;
+                margin-top: 3px;
+              }
+
+              .ans{
+                float: left;
+                width: 100%;
+                margin-top: 6px;
+                height: 50px;
+                border: 0;
+                padding: 0px;
+              }
+
+              input[type=text]{
+              
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 10px
+                
+              }
+
+              select{
+                width: 100%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius: 5px;
+                border: 0;
+                box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.76);
+              }
+
+              .in{
+                box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.76);
+                width: 100%;
+                border: 0;
+                border-radius: 5px;
+              }
+
+              
+              .int{
+                box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.76);
+                width: 100%;
+                border: 0;
+                border-radius: 5px;
+               
+             
+              }
+
+      
+
+
+            /* .fm2{
+                background-color: whitesmoke ;
+            } */
+
+            .nav-bar{
+
+              background-image: linear-gradient(60deg, rgb(221, 208, 245),#b0b1fa,white);
+            }
+
+            /* .fin_bg{
+              
+              
+            } */
+
+            .nav_link{
+                text-decoration: none;
+                text-size-adjust: 35px;
+                font-family: Arial, Helvetica, sans-serif;
+                padding-right: 0px;
+            }
+            
+            a {text-decoration: none; 
+                color: #a17fe0;
+            }
+            a:hover {text-decoration: none; 
+                color: #5D26C1;
+                
+            }
+
+            h1{text-decoration: none; 
+                color: rgb(0, 0, 0); 
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            h1:hover{text-decoration: none; 
+                color: #4A4090;}
+
+                .heads{text-decoration: none; 
+                color: black; 
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .heads:hover{text-decoration: none; 
+                color: #4A4090;}
+            
+            .box{
+                display: flex;
+                flex-direction: row;
+                
+            }
+            #tech_img_1{
+                width: 100px;
+                height: 100px;
+                border: 1px transparent;
+                border-radius: 4px;
+                flex-direction: column;
+                margin: 40px;
+            }
+            .im1{
+              transition: transform .7s ease-out;
+            }
+            .im1:hover{transform: rotate(360deg);}
+
+
+            #tech_img_2{
+                width: 150px;
+                height: 150px;
+                border: 1px transparent;
+                border-radius: 4px;
+                flex-direction: column;
+                margin: 20px;
+                
+            }
+
+
+            .im2{
+              transition: transform .7s ease-out;
+            }
+
+            .im2:hover{
+              transform:scale(1.5)
+            }
+
+            #tech_img_3{
+                width: 100px;
+                height: 100px;
+                border: 1px transparent;
+                border-radius: 4px;
+                flex-direction: column;
+                margin: 40px;
+            }
+
+
+
+            .im3{
+              transition: transform .7s ease-in;
+            }
+
+            .im3:hover{
+              transform:scale(1.5)
+            }
+
+            #tech_img_4{
+                width: 100px;
+                height: 100px;
+                border: 1px transparent;
+                border-radius: 4px;
+                flex-direction: column;
+                margin: 40px;
+            }
+
+
+
+            .im4{
+              transition: transfrom .7s ease-in;
+            }
+
+            .im4:hover{
+              transform:scale(1.5)
+            }
+
+            #tech_img_5{
+                width: 90px;
+                height: 90px;
+                border: 1px transparent;
+                border-radius: 4px;
+                flex-direction: column;
+                margin: 40px;
+            }
+
+
+            .im5{
+              transition: transform .7s ease-in;
+            }
+
+            .im5:hover{
+              transform: scale(1.5)
+            }
+
+            #tech_img_6{
+                width: 150px;
+                height: 150px;
+                border: 1px transparent;
+                border-radius: 4px;
+                flex-direction: column;
+                margin: 20px;
+            }
+
+
+            .im6{
+              transition: transform .7s ease-in;
+            }
+
+            .im6:hover{
+              transform: scale(1.5);
+            }
+
+            #tech_img_7{
+                width: 100px;
+                height: 100px;
+                border: 1px transparent;
+                border-radius: 4px;
+                flex-direction: column;
+                margin: 40px;
+            }
+
+     
+
+            .im7{
+              transition: transform .7s ease-out;
+            }
+
+            .im7:hover{
+              transform: rotate(360deg)
+            }
+
+
+            .tech-bg{
+                background-color: #f8f8f8;
+                
+            }
+
+            .tbg_2{
+              display: flex;
+              font-family: Arial, Helvetica, sans-serif;
+              
+            }
+
+            /* .test-bg{
+                background-image: linear-gradient(to right,white,#8E2DE2,#4A4090,#8E2DE2,white);
+                /* background-image: url("graph_background.jpg"); */
+                /* background-color: #4A4090; */
+               
+           /*} */
+
+            .fs{
+                background-color: rgb(36, 34, 34);
+                height: 400px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #f3ecec;
+            }
+
+            .nav-bar{
+                text-align: right;
+                position:fixed;
+                top: 0;
+                right: 0px;
+                left: 0px;
+                border-bottom-right-radius: 15px;
+                box-shadow: 0 5px 10px 0 rgba(0,0,0,.2);
+                height: min-content;
+                
+            }
+
+            .naav{
+              color: #4A4090;
+            }
+
+
+
+
+                * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  /* margin: auto; */
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+/* .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+} */
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+
+/* footer */
+/* The footer is fixed to the bottom of the page */
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+
+    header {
+        padding-top: 40px;
+    }
+}
+
+
+.footer-distributed {
+    background-color: #2c292f;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img {
+    width: 90%;
+    height: 90%;
+}
+
+.footer-distributed h3 span {
+    color: #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-distributed .footer-center p a {
+    color: #e0ac1c;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 880px) {
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+
+}
+
+
+</style>
+    </head>
+
+        <body>
+            <div class="nav-bar">
+                <div class="text_2">
+                  <div class="pd">
+                    <a><img src = "final.png" align="left" width="300" ></a>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;&nbsp;&ensp;&nbsp;&ensp;&ensp;&nbsp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&NonBreakingSpace;
+                    
+                    <a class="nav_link" href="">Home &nbsp; </a>
+                    <a class="nav_link"  href="#fooom">Contact Us &nbsp;</a> 
+                    <a class="nav_link"  href="">Services &nbsp; </a>
+                    <a class="nav_link"  href="#custom">Customers &nbsp; </a>
+                    <a class="nav_link"  href="#map">Reach Us</a>
+                  </div>
+                  </div>
+                </div>
+            <!-- <hr> -->
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <!-- <center><h2><u>App Development</u></h2></center> -->
+                <div class="appdev">
+
+                  <div id="text">
+                    <p>
+                      <div class="hd">
+                      &ensp;&ensp;&ensp;Web Design and Development<br>
+                    </div>
+                      <!-- <hr color="black"  size="1" align="left" width="700"> -->
+                      <div id="text_3">
+                        <p>
+                          <br>
+                          <br>
+                          
+                          <b>We are an international award-winning IT company with 6 offices <br>across India, and offers web design, web development and digital marketing services.</b>
+                          <br>
+                          <br>
+                          Web Assasins is rated as one of the top web agencies in India by various industry
+                          magazines and review sites. We have a right blend of award-winning designers, expert
+                          web developers and Google certified digital marketers which make us a unique one-stop
+                          solution for hundreds of our clients, spread across 80+ countries.<br>
+
+                            
+                          <br>
+                      
+                        </p>
+                      </div>
+                    </p>
+                  </div>
+
+
+                &emsp;<img src="wbg.png" height="500px" width="500px">
+                
+              <br>
+              </div>
+                <!-- <hr> -->
+
+                <br>
+                <br>
+
+              <div class="test-bg">
+            <div id="text_2">
+              <center><p>People who believed in us</p></center>
+            </div>
+
+            <div class="slideshow-container">
+
+              <div class="mySlides fade">
+                <!-- <div class="numbertext">1 / 3</div> -->
+                <img src="r1.png" align="center">
+                <!-- <div class="text">Caption Text</div> -->
+              </div>
+              
+              <div class="mySlides fade">
+                <!-- <div class="numbertext">2 / 3</div> -->
+              <img src="r2.png" align="center">
+                <!-- <div class="text">Caption Two</div> -->
+              </div>
+              
+              <div class="mySlides fade">
+                <!-- <div class="numbertext">3 / 3</div> -->
+                <img src="r3.png" align="center">
+                <!-- <div class="text">Caption Three</div> -->
+              </div>
+              
+              </div>
+              <br>
+              
+              <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+              </div>
+              <br>
+              <br>
+
+          </div>
+        
+              <script>
+                  let slideIndex = 0;
+                  showSlides();
+                  
+                  function showSlides() {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {slideIndex = 1}    
+                    for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                    setTimeout(showSlides, 3000); // Change image every 2 seconds
+                  }
+                  </script>
+</div>
+</div>
+
+
+              <br>
+
+            <div class="tech-bg">
+              <br>
+              <div id="text_2">
+                <center>Technologies Used By Us</center>
+              </div>
+              <br>
+              <br>
+
+                <div class="tbg_2">
+                <div class="container_1">
+                <img src="png-transparent-logo-html-html5-removebg-preview.png" id="tech_img_1" class="im1" id="cl">
+                <div class="overlay">
+                  <!-- <div class="text"><h3>Clojure</h3></div> -->
+                </div>
+              </div>
+
+              <div class="container_2">
+                <img src="kisspng-php-computer-icons-tonic-vector-5b0302dab92415.0931737615269239947584-removebg-preview.png" id="tech_img_2" class="im2" id="cl">
+                <div class="overlay">
+                  <!-- <div class="text"><h3>Kotlin</h3></div> -->
+                </div>
+              </div>
+
+              <div class="container_3">
+                <img src="nodejs.png" id="tech_img_3" class="im3" id="cl">
+                <div class="overlay">
+                  <!-- <div class="text"><h3>Node JS</h3></div> -->
+                </div>
+              </div>
+
+              <div class="container_4">
+                <img src="meteor.png" id="tech_img_4" class="im4" id="cl">
+                <div class="overlay">
+                  <!-- <div class="text"><h3>DJango</h3></div> -->
+                </div>
+              </div>
+
+              <div class="container_5">
+                <img src="ruby.png" id="tech_img_5" class="im5" id="cl">
+                <div class="overlay">
+                  <!-- <div class="text"><h3>Ruby</h3></div> -->
+                </div>
+              </div>
+
+                <div class="container_6">
+                <img src="png-transparent-css3-css3-logo-logo-language-programming-language-css-3d-icon-removebg-preview.png" id="tech_img_6" class="im6" id="cl">
+                <div class="overlay">
+                  <!-- <div class="text"><h3>Scala</h3></div> -->
+                </div>
+              </div>
+
+              <div class="container_7">
+                <img src="js-javascript-round-logo-icon-png-11662226392lsrrajcm0y-removebg-preview.png" id="tech_img_7" class="im7" id="cl">
+                <div class="overlay">
+                  <!-- <div class="text"><h3>React JS</h3></div> -->
+                </div>
+              </div>
+                <br>
+                <br>
+                
+              </div>
+            
+                <!-- <hr> -->
+                
+            <div class="fin_bg">
+              <br>
+            <br>
+            <div id="text_2">
+              <center>Our Evolving Journey</center>
+            </div>
+              <br>
+            <br>
+            <p>
+              <div class="to1">
+                <img src="g1.png" width="900" align="left">&ensp;&ensp;&ensp;
+                <br>
+                <br>
+                <br>
+                <br>
+                <p>
+                  “Demand for our services continues to be very strong. We registered<br>
+                  trong, profitable growth across all our industry verticals and in all <br>
+                  our major markets. Our order book is holding up well, with a healthy mix<br> of
+                  growth and transformation initiatives, cloud migration and outsourcing <br>
+                  engagements. As clients prepare for a more challenging environment ahead,
+                  technologies like cloud that have been embraced now have to be fully leveraged<br>
+                   to realize the promised value. TCS has the combination of contextual knowledge,
+                    technology expertise and execution rigor to deliver on this imperative.”
+                </p>
+                <br>
+              </div>
+                <!-- <img src="turnover3.gif" width="300"> -->
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="to2">&ensp;&ensp;&ensp;
+                  <p>
+                    “This was another quarter of excellent execution that saw us delivering several transformational projects like the largest migration of 2.3 million policies to our TCS Insurance platform in one go in the UK, or the trading platform at the Gift City. Our delivery leadership congregated during the quarter and are raising the bar further on execution excellence with frameworks like Rigor in Transformation. We are pleased that our office facilities are becoming once again the place of buzz with more and more of our employees and clients celebrating togetherness to realize their full potential. Very importantly, the headwinds from the supply-side challenges are abating, so that sets us up well for the seasonally weak second half of the year. We believe our quarterly annualized attrition has peaked in Q2 and should see it taper down.”
+                  </p>
+                <img src="g2.png" width="700" height="  400" align="right">
+              </div>
+            </p>
+            <br>
+            <br>
+            <br>
+          </div>
+
+              <div id="text_2">
+                <center>This is what out client say about us</center>
+              </div>
+              <br>
+              <br>
+              <br>
+              <div class="boxes" id="custom">
+              <div class="box_1">
+                <br>
+                <br>
+                <center>
+                  <div class="ccc">
+                    <center><img src="ccc1.jpeg" class="cccc"></center>
+                  </div>
+                  <p>
+                  Kristen Fischer<br>
+                  Seattle, USA
+                </p>
+                <br>
+
+                <br>
+                <p>
+                  "We partnered with Fluid Studios to design our website. We found them incredibly helpful and patient as we really didn't know what we wanted. Greg met with us on numerous occasions and we found the whole process a great experience. We ended up with a website we loved. I would definitely recommend Fluid Studios - you won't be disappointed."
+                </p></center>
+              </div>
+
+              <div class="box_2">
+                <br>
+                <br>
+                <center>
+                  <div class="ccc">
+                    <center><img src="ccc3.jpeg" class="cccc"></center>
+                  </div>
+                  <p>
+                  Mohd. Tahir<br>
+                  Lahore, Pakistan
+                </p>
+                <br>
+                <br>
+
+                <p>
+                  "We are extremely happy with the website that Fluid Studios Ltd have created for us. It is visually appealing, clean, easy to navigate and responsive – everything we asked for. The CMS is intuitive and user friendly. Kelly was a pleasure to work with and has offered advice and support post launch. We would definitely recommend Fluid Studios to others."</p>
+                </center>
+                </div>
+
+              <div class="box_3">
+                <br>
+                <br>
+                <center>
+                  <div class="ccc">
+                    <center><img src="ccc2.jpeg" class="cccc"></center>
+                  </div>
+                  <p>
+                  Ben Austin<br>
+                  Singapore City, ROS
+                </p>
+
+                <br>
+                <br>
+                <p>
+                  "It was really important for SEC Interiors to work with a local web design company and we are really pleased with what Fluid Studios have delivered for us. They have provided us with an award-winning website that we are able to freely update and change to suit differing user behaviour, meaning over the 2 year period it has grown to become something we are really proud of, without the continual need to invest in new website changes or technology."
+                </p>
+              </center>
+              </div>
+            </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+            <!-- <hr> -->
+            <div class="form">
+            <form id="fooom">
+              <div class="text_4">
+                <a><center>Let's Connect</center></a>
+              </div>
+              <br>
+              <br>
+
+              <div class="field">
+                <label for="">First Name</label>
+              </div>
+              <div class="ans">
+                <input type="text" placeholder="Your name here" class="in">
+              </div>
+
+              <div class="field">
+                <label for="">Last Name</label>
+              </div>
+              <div class="ans">
+                <input type="text" placeholder="Your surname here" class="in" >
+              </div>
+
+              <div class="field">
+                <label for="" placeholder="---Select---">Country</label>
+              </div>
+              <div class="ans">
+                <select>
+                  <option value="a">---Select---</option>
+                  <option value="q">India</option>
+                  <option value="w">Australia</option>
+                  <option value="e">USA</option>
+                  <option value="r">UK</option>
+                  <option value="t">Sri Lanka</option>
+                  <option value="y">Canada</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="">Subject</label>
+              </div>
+              <div class="ans">
+                <input type="text" placeholder="Write Something here..." class="int">
+              </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <center><button class="submit">SUBMIT</button></center>
+
+            </form>
+            <div class="fmimg">
+              <img src="appdev3.png" align="right">
+            </div>
+            
+          </div>
+
+          
+
+<!-- footer -->
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+      <img src="final.png" height="100%" width="100%">
+
+    <p class="footer-links">
+      
+        <a href="">About Us</a><br>
+        <a href="">Blog</a><br>
+        <a href="">News</a><br>
+        <a href="">Affiliate Program</a><br>
+        <a href="">Developers</a><br>
+        <a href="">FAQ</a><br>
+      
+    </p>
+
+    <p class="footer-company-name">© 2023 Web Assasins IT Solutions Pvt. Ltd.</p>
+  </div>
+
+  <div class="footer-center">
+    <div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3884.672970334428!2d74.93180031400986!3d13.183007813772903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbb56415ad85e5b%3A0x10b77ac6f6afc7fa!2sN.M.A.M.%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1671732664200!5m2!1sen!2sin" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>      <i class="fa fa-map-marker"></i>
+        <p><span>N.M.A.M Institute of Technology
+                Karkala,Nitte
+        </p>
+    </div>
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:webassasins.com">webassasins@gmail.com</a></p>
+    </div>
+  </div>
+  <div class="footer-right">
+    <p class="footer-company-about">
+      <span>About the company</span>
+      Web Assasins was founded in year 2020. Since then, We are lead contributors in the business development of many
+      globally recognized iconic brands.
+      <br>
+      <br>
+      We offer multiple services like Web Development, App Development, Social Media Management, Graphic Designing with
+      <br>
+      latest technologies.</p>
+    <div class="footer-icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-youtube"></i></a>
+    </div>
+  </div>
+</footer>
+        </body>
+</html>
