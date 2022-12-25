@@ -10,6 +10,13 @@ body
     font-size: large;
     color: #755BB4;
 }
+@media(min-width:991px)
+{
+  div#navbarSupportedContent
+  {
+    display: none;
+  }
+}
 .nav-link:hover
 {
  
@@ -19,26 +26,30 @@ nav{
     background-color: aqua;
     height: 60px;
 }
-.nav-item
-{
+  .nav-item
+  {
+      position: relative;
+      left: 55%;
+      padding: 0 10px 0 10px;
+  }
+  .navbar-toggler-icon {
+    /* background-image: url(); */
+    /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); */
+  }
+  .btn-danger
+  {
+   position: relative;
+   top: 30%;
+    border-color: #8064A2 !important;
+    background-color: #8064A2 !important;
+  }
+  .btn-outline-danger
+  {
     position: relative;
-    left: 15%;
-    padding: 0 10px 0 10px;
-}
-.navbar-toggler-icon {
-  /* background-image: url(); */
-  /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); */
-}
-.btn-danger
-{
-  border-color: #8064A2 !important;
-  background-color: #8064A2 !important;
-}
-.btn-outline-danger
-{
-  border-color: #8064A2 !important;
-  color: #8064A2 !important;
-}
+    top: 30%;
+    border-color: #8064A2 !important;
+    color: #8064A2 !important;
+  }
 .btn-danger:hover
 {
   background-color: white !important;
@@ -68,6 +79,29 @@ width: 110%;
 height: 100%;
 width: 100%;
 
+}
+@media only screen and (max-width : 1250px){
+  .right
+  {
+    display: none;
+    align-content: center;
+  }
+  #arrow
+  {
+    display: none;
+  }
+  .left .swiper-slide h1
+  {
+    text-align: center !important;
+    justify-content: center !important;
+  }
+  #prob 
+  {
+    width: 100%;
+    padding: none !important;
+    position: relative;
+    right: 20%;
+  }
 }
 .top_image
 {
@@ -399,6 +433,34 @@ width: 100%;
 /* services */
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+@media only screen and (max-width : 980px)
+{
+  #nav_service
+  {
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-self: center !important;
+
+  }
+  .flip-card
+  {
+  height: 350px !important;
+  width: 350px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+ display: flex !important;
+ flex-direction: row;
+ gap: 13% !important;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 5%;
+ padding: 0 0 0 0 !important;
+}
+
+}
 .flip-card {
     position: relative;
     left: 10%;
