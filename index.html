@@ -29,20 +29,18 @@
 </head>
 <body>
     <!--navbar-->
-    <nav style="background-color: white;" class="navbar navbar-expand-sm bg-light fixed-top">
-      <div class="container-fluid">
-      <a style="margin-top: 0px;" class="navbar-brand" href="#">
-        <img class="logo_webassasins" src="images\final_090620 (1).png" alt="Logo" style="height: 70%;
-        width: 50%;margin-top: 3%;margin-left: 5%;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">
+          <img src="images\final_090620 (1).png" width="300" height="70" alt="">
       </a>
-      <button type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" class="navbar-toggler"><span class='navbar-toggler-icon'></span></button>
-      <div class="collapse navbar-collapse" id="navbar-menu">
-
-        <ul class="navbar-nav">
-            
-
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: white;">
+        <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="about\index.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#nav_service">Services</a>
@@ -51,22 +49,24 @@
             <a class="nav-link" href="#test">Customers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Our Team</a>
+            <a class="nav-link" href="#ourteam">Our Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <a style="margin-top: 20px; border-radius: 30px;"href="#" class="btn btn-danger" data-toggle="modal" data-target="#modalRegisterForm">Sign up</a>
-          </li>
-          <li class="nav-item">
-            <a style="margin-top: 20px; border-radius: 30px;"href="#" class="btn btn-outline-danger" data-toggle="modal" data-target="#modalLoginForm">Log in</a>
-          </li>
+            <a class="nav-link" href="#footerr">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a style=" border-radius: 30px;"href="#" class="btn btn-danger " data-toggle="modal" data-target="#modalRegisterForm">Sign up</a>
+             
+              </li>
+              <li class="nav-item">
+              <a style=" border-radius: 30px;"href="#" class="btn btn-outline-danger" data-toggle="modal" data-target="#modalLoginForm">Log in</a>
+            </li>
+        
+          </ul>
+        </div>
 
-        </ul>
       </div>
-      </div>
-      </nav>
+    </nav>
       <!-- sign in -->
       <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
   aria-hidden="true">
@@ -202,8 +202,8 @@
               </div>
             </div>  
           </div>
-          <div class="swiper-button-next" style="color: #8064A2;"> </div>
-          <div class="swiper-button-prev" style="color: #8064A2;"></div>
+          <div id="arrow" class="swiper-button-next" style="color: #8064A2;"> </div>
+          <div id="arrow" class="swiper-button-prev" style="color: #8064A2;"></div>
           <div class="swiper-pagination" style="color: #8064A2;"></div>
         </div>
       <script>
@@ -394,7 +394,7 @@
 </section>
 
     <!-- our team -->
-    <section class="our_team">
+    <section class="our_team" id="ourteam">
       <div class="container">
         <div class="cards grid-row">
             <div class="card flex-row colmun">
@@ -430,12 +430,12 @@
             <div class="col-right card-info">
                 <div class="card-info-inner">
                 <h2>Hello, I'm Kshitij Shetty</h2>
-                <p>2nd Year student @ NMAMIT <br></p>
+                <p>Sophomore at NMAMIT <br>Front-end Developer & UI Designer</p>
                 <ul class="social">
                 
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/kshitij_kishore_shetty/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/i/flow/signup"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/kshitij-shetty-36b88a255/"><i class="fa fa-linkedin"></i></a></li>
                 </ul>
                 </div>
             </div>
@@ -452,7 +452,7 @@
             <div class="col-right card-info">
                 <div class="card-info-inner">
                 <h2>Hello, I'm Vedhanth Shetty</h2>
-                <p>Sophomore at NMAMIT <br></p>
+                <p>Sophomore at NMAMIT <br>Information Architecture</p>
                 <ul class="social">
                     <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -466,7 +466,7 @@
 
 
     <!-- footer section  -->
-    <section class="footer">
+    <section class="footer" id="footerr">
     <footer>
       <div>
           <span class="logo">WEB ASSASINS</span>
