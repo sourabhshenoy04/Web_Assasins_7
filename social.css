@@ -1,0 +1,998 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.offset::before {
+    display: block;
+    content: "";
+    height: 12rem;
+    margin-top: -2rem;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h3 {
+    font-size: 44px;
+    line-height: 55px;
+    color: #121212;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: 20px;
+    line-height: 32px;
+    color: #6c6c6c;
+    margin-top: 16px;
+    font-weight: normal;
+}
+
+.nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 6.5rem;
+    background: transparent;
+    transition: all 0.sec ease;
+    z-index: 100000;
+}
+
+.nav.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+    box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.3)
+}
+
+.nav .navbar-toggler {
+    display: none;
+    border: none;
+    outline: none;
+
+}
+
+.nav .navbar-toggler .toggler-icon {
+    width: 27px;
+    height: 3px;
+    background-color: #121212;
+    margin: 5px 0;
+    position: relative;
+    display: block;
+    transition: all 0.3s ease-out 0s;
+
+}
+
+.nav .menubar .menuitems {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav .menubar .menuitems li {
+    margin: 0 15px;
+
+}
+
+.nav .menubar .menuitems li a {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav .menubar .menuitems li a:hover {
+    color: #4F47E4;
+}
+
+.nav .navsocial {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .navsocial span {
+    font-size: 18px;
+    font-weight: 600;
+    padding-right: 10px;
+    color: #6c6c6c;
+
+}
+
+.nav .navsocial ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .navsocial ul li {
+    margin: 0 7px;
+}
+
+.nav .navsocial ul li a {
+    color: #6c6c6c;
+    font-size: 22px;
+
+}
+
+.back {
+    background-image: url(https://thumbs.dreamstime.com/b/smart-city-social-media-people-icons-communication-network-modern-background-171236825.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+.back.overlay {
+    background-image: linear-gradient(rgba(232, 237, 255, 0.9) 40%, rgba(254, 255, 244, 0.3) 70%, rgba(255, 255, 255, 0.12));
+    width: 100%;
+    height: 100%;
+}
+
+.back .hero-shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+.back .hero-shape img {
+    width: 100%;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50% -50%);
+    text-align: center;
+}
+
+.hero-text h6 {
+    color: #1d1d1d;
+    font-size: 27px;
+}
+
+.hero-text .btn {
+    margin-top: 22px;
+}
+
+.mainbtn {
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 2px solid transparent;
+    padding: 0 32px;
+    font-size: 16px;
+    line-height: 48px;
+    color: #0067f4;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.4s ease-out 0s;
+    z-index: 5;
+}
+
+.hero-text .btn li {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+}
+
+.hero-text .btn li a.mainbtn {
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: #fff;
+    line-height: 50px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+
+}
+
+.hero-text .btn li a.mainbtn i {
+    margin-left: 5px;
+    color: #646EE5;
+}
+
+.hero-text .btn .btn1 {
+    color: #fff;
+}
+
+.hero-text .btn .btn1::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #535CF1, #A147E4);
+    z-index: -1;
+    transition: all 0.3s ease;
+    background-position: right center;
+}
+
+.hero-text .btn .btn1:hover::before {
+    background-image: linear-gradient(to left, #535CF1, #A147E4);
+    background-position: left center;
+
+}
+
+.hero-text .btn .btn2:hover {
+    box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.16);
+
+}
+
+#wrapper {
+    margin: 5rem 7rem 10rem 7rem;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10rem;
+
+}
+
+.service h6 {
+    margin-bottom: 5rem;
+}
+
+.service .service-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service .service-content .box {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service .service-content .box .box-one {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.service .service-content .box .box-one .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.service .service-content .box .box-one .services i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #535CF7;
+}
+
+.service .service-content .box .box-one .services .service-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: justify;
+}
+
+.service .service-content .service-img {
+    width: 70%;
+
+}
+
+.service .service-content .service-img img {
+    width: 100%;
+}
+
+.pricing {
+    display: block;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.pricing h6 {
+    margin-bottom: 6rem;
+}
+
+.pricing .table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pricing .basic {
+    width: 355px;
+    height: 100%;
+    border: 1px solid #535CF1;
+    border-radius: 20px;
+}
+
+.pricing .basic h3 {
+    text-align: center;
+    font-weight: 300;
+    padding: 40px 0;
+    background-color: #ecf0f1;
+    transition: all ease 0.6s;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.pricing .basic:hover h3 {
+    background-image: linear-gradient(to right, #535CF1, #A147E4);
+    color: #fff;
+}
+
+.pricing .premium h3 {
+    background-image: linear-gradient(to right, #535CF1, #A147E4);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    color: #fff;
+}
+
+.pricing .basic .price {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.pricing .basic .price .sign {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 400;
+    vertical-align: middle;
+
+
+
+}
+
+.pricing .basic .price .currency {
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: -2px;
+    line-height: 60px;
+    padding: 0;
+    vertical-align: middle;
+    font-family: "Poppins", sans-serif;
+    padding-top: 15px;
+}
+
+.pricing .basic .price .cent {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 400;
+    vertical-align: bottom;
+
+
+}
+
+.pricing .basic .price .month {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    vertical-align: bottom;
+}
+
+.pricing .basic ul li {
+    border-top: 1px solid #ccc;
+    padding: 18px 0;
+    border-bottom: 1px solid #ccc;
+    color: #7f8c8d;
+}
+
+.pricing .basic ul li i {
+    padding-right: 5px;
+    color: #535CF1;
+}
+
+.pricing .btn {
+    margin: 2rem auto;
+    width: 170px;
+}
+
+.pricing .btn a {
+    font-weight: normal;
+    font-size: 18px;
+    border-radius: 50px;
+    outline: medium none;
+    border: 1px solid #2ecc71;
+    color: #1d1d1d;
+}
+
+.pricing .basic:hover .btn a {
+    background-image: linear-gradient(to right, #535CF1, #A147E4);
+    color: #fff;
+    border: 1px solid #2ecc71;
+}
+
+.pricing .premium .btn a {
+    background-image: linear-gradient(to right, #535CF1, #A147E4);
+    color: #fff;
+    border: 1px solid #2ecc71;
+}
+
+.calltoact {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #910AFA), url(https://imageio.forbes.com/specials-images/imageserve/62dae9a79078a40248c1ec8d/0x0.jpg?format=jpg&width=1200);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 10rem;
+}
+
+.calltoact .parallax {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.calltoact .parallax h3,
+.calltoact .parallax p {
+    color: #fff;
+}
+
+.calltoact .parallax p {
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+.calltoact .parallax .callnews {
+    background-color: #fff;
+    max-width: 450px;
+    margin: auto;
+    border-radius: 50px;
+    padding: 12px 0 12px 15px;
+    position: relative;
+}
+
+.calltoact .parallax .callnews i {
+    color: #535CF1;
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+.calltoact .parallax .callnews input {
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.calltoact .parallax .callnews button {
+    background-image: linear-gradient(to right, #535CF1, #A147E4);
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 15px 20px;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 50px;
+
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact h6 {
+    margin-bottom: 3rem;
+}
+
+.contact .form {
+    width: 70%;
+}
+
+.contact .form .first-row,
+.contact .form .second-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.contact .form .first-row input,
+.contact .form .second-row input {
+    width: 47%;
+    height: 55px;
+    border: 1px solid #cbced1;
+    border-radius: 5px;
+    padding: 0 25px;
+    font-size: 16px;
+    outline: none;
+}
+
+.contact .form textarea {
+    width: 100%;
+    height: 125px;
+    border: 1px solid #cbced1;
+    border-radius: 5px;
+    padding: 0 25px;
+    font-size: 16px;
+    outline: none;
+}
+
+.contact .form .btn {
+    margin: 2rem auto;
+    width: 170px;
+}
+
+.contact .form .btn a {
+    background-image: linear-gradient(to right, #535CF1, #A147E4);
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: normal;
+    outline: none;
+}
+
+footer {
+    background-color: #F4F6F7;
+    padding: 7rem;
+}
+
+footer .row-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer .row-one ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer .row-one a {
+    padding-right: 20px;
+    font-size: 26px;
+    color: #6c6c6c;
+}
+
+footer .row-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .row-two h6 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    padding-bottom: 20px;
+    color: #6c6c6c;
+}
+
+footer .row-two li {
+    padding-bottom: 12px;
+}
+
+footer .row-two li a {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #121212;
+}
+
+footer .row-two .firstrow:nth-child(4) {
+    max-width: 300px;
+
+}
+
+footer .row-two .newsletter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 5px;
+}
+
+footer .row-two .newsletter input {
+    width: 100%;
+    height: 44px;
+    border-radius: 50px;
+    padding: 0 24px;
+    border: 0;
+    background-color: rgba(33, 33, 33, 0.12);
+    font-weight: 500;
+    outline: none;
+}
+
+footer .row-two .newsletter input:placeholder {
+    opacity: 1;
+    color: #6c6c6c;
+}
+
+footer .row-two .newsletter button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 44px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 0;
+    font-size: 20px;
+    color: #121212;
+    background-color: none;
+    cursor: pointer;
+}
+
+footer .row-two .texts {
+    margin-top: 16px;
+}
+
+.copyrights {
+    background-color: #2b345f;
+    padding: 23px 0;
+}
+
+.copyrights p {
+    text-align: center;
+    color: #fff;
+}
+
+@media only screen and (max-width:946px) {
+    .nav {
+        padding: 1rem 3rem;
+
+    }
+
+    .nav .navsocial {
+        display: none;
+    }
+
+    hero-text {
+        width: 60%;
+    }
+
+    .hero-text h3 {
+        font-size: 33px;
+    }
+
+    #wrapper {
+        margin: 3rem 3rem 10rem 3rem;
+    }
+
+    .service {
+        margin-bottom: 3rem;
+
+    }
+
+    .service h6 {
+        margin-bottom: 3rem;
+    }
+
+    .service .service-content {
+
+        flex-direction: column-reverse;
+        justify-content: center;
+
+    }
+
+    .service .service-content .box {
+        width: 100%;
+
+    }
+
+    .service .service-content .box .box-one {
+
+
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+
+    }
+
+
+    .service .service-content .service-img {
+        width: 100%;
+        margin-bottom: 5rem;
+
+    }
+
+
+    .pricing .table {
+
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .pricing .basic {
+        margin-bottom: 3rem;
+    }
+
+    .calltoact {
+
+        margin-bottom: 5rem;
+    }
+
+    .calltoact .parallax {
+        width: 80%;
+    }
+
+    .contact .form {
+        width: 80%;
+    }
+}
+
+
+
+@media only screen and (max-width:754px) {
+
+    .nav {
+
+        padding: 0.7rem 1rem;
+    }
+
+    .nav .navbar-toggler {
+        display: block;
+        position: absolute;
+        top: 26px;
+        right: 16px;
+        z-index: 1000000;
+    }
+
+    .nav .menubar {
+        position: fixed;
+        top: 55px;
+        right: 0;
+        width: 300px;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.9);
+        transition: all 0.8s ease;
+    }
+
+    .nav .menubar .menuitems {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: justify;
+        padding: 40px 0;
+    }
+
+    .nav .menubar .menuitems li {
+        margin: 2rem 30px;
+    }
+
+    hero-text {
+        width: 80%;
+    }
+
+    .hero-text h3 {
+        position: relative;
+        left: -40px;
+    }
+
+    .hero-text h6 {
+        font-size: 20px;
+        position: relative;
+        left: -30px;
+
+    }
+
+    #wrapper {
+        margin: 3rem 1rem 10rem 1rem;
+    }
+
+    .service h3 {
+        font-size: 33px;
+    }
+
+    .service h6 {
+        font-size: 16px;
+    }
+
+
+    .service .service-content .service-img {
+        width: 90%;
+        margin-bottom: 5rem;
+
+    }
+
+    .pricing h3 {
+        font-size: 33px;
+    }
+
+    .pricing h6 {
+        font-size: 16px;
+    }
+
+    .pricing .table {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .pricing .basic {
+        margin-bottom: 3rem;
+    }
+
+
+    .calltoact .parallax {
+        width: 90%;
+    }
+
+    .calltoact .parallax h3 {
+        font-size: 33px;
+    }
+
+    .calltoact .parallax h6 {
+        font-size: 16px;
+    }
+
+    .calltoact .parallax .callnews input {
+        font-size: 16px;
+    }
+
+    .calltoact .parallax .callnews button {
+        font-size: 15px;
+    }
+
+    .contact h3 {
+        font-size: 33px;
+    }
+
+    .contact h6 {
+        font-size: 16px;
+    }
+
+    .contact .form {
+        width: 80%;
+    }
+
+    .contact .form .btn a {
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 4rem 1rem;
+    }
+
+    footer .second-row {
+        flex-wrap: wrap;
+    }
+
+    footer .second-row .firstrow {
+        margin-bottom: 1rems;
+    }
+
+
+}
+
+@media only screen and (max-width:541px) {
+    .hero-text h3 {
+        position: relative;
+        left: -27px;
+        font-size: 28px;
+        line-height: 45px;
+    }
+
+    .hero-text .btn li a.mainbtn {
+        margin-top: 0.7rem;
+    }
+
+    .hero-text .btn li a.mainbtn {
+        font-size: 15px;
+    }
+
+    .service {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .service h6 {
+        text-align: justify;
+    }
+
+    .service .service-content .box {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .service .service-content .box .box-one {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+
+    }
+
+    .contact .form {
+        width: 100%;
+    }
+
+    .contact .form .first-row,
+    .contact .form .first-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .contact .form .first-row {
+        margin: 0 0;
+    }
+
+    .contact .form .first-row input,
+    .contact .form .first-row input {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .calltoact .parallax h3 {
+        font-size: 28px;
+        line-height: 45px;
+
+    }
+
+    footer {
+        padding: 4rem 1rem;
+    }
+
+    footer .second-row {
+        flex-wrap: wrap;
+    }
+
+    footer .second-row .firstrow {
+        margin-bottom: 1rems;
+        justify-content: space-evenly;
+    }
+
+
+}
